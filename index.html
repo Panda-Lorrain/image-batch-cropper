@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>截图批量裁切</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/jszip.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <h1>截图批量裁切</h1>
+      <div class="topbar-actions">
+        <input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp" multiple hidden>
+        <button id="btnImport" type="button">导入图片</button>
+        <input type="file" id="folderInput" webkitdirectory multiple hidden>
+        <button id="btnFolder" type="button">选文件夹</button>
+        <span id="countLabel" class="count">已导入 0 张</span>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="canvas-area">
+        <div id="dropzone" class="dropzone">
+          <p class="dropzone-hint">拖入图片,或点上方按钮导入</p>
+          <canvas id="canvas" width="800" height="500"></canvas>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-row">
+          <span>样图 <span id="curIndex">0</span> / <span id="totalCount">0</span></span>
+          <button id="btnPrev" type="button">&lt;</button>
+          <button id="btnNext" type="button">&gt;</button>
+        </div>
+        <div id="thumbs" class="thumbs"></div>
+        <div class="panel-row selection-info">
+          <div>选区 x=<span id="selX">-</span> y=<span id="selY">-</span></div>
+          <div><span id="selW">-</span> × <span id="selH">-</span> px</div>
+        </div>
+        <div class="panel-row">
+          <label>比例锁</label>
+          <select id="aspectSelect">
+            <option value="0">自由</option>
+            <option value="1">1:1</option>
+            <option value="1.7778">16:9</option>
+            <option value="1.3333">4:3</option>
+          </select>
+        </div>
+        <button id="btnPreview" type="button" class="action">预览裁切</button>
+        <button id="btnExport" type="button" class="action primary" disabled>裁切全部并保存</button>
+        <div id="progress" class="progress hidden"></div>
+        <div id="report" class="report"></div>
+        <div id="previewBox" class="preview-box hidden">
+          <h3>预览</h3>
+          <img id="previewImg" alt="预览">
+        </div>
+        <div id="selfTestBox" class="selftest hidden"></div>
+      </aside>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
