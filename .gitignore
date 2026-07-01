@@ -1,0 +1,17 @@
+# 操作系统
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志 & 临时文件
+*.log
+*.tmp
+~$*
