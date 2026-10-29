@@ -1,0 +1,11 @@
+{
+  "title": "屏幕变化截图工具",
+  "source": "E:\\ScreenChangeCapture",
+  "source_branch": "master",
+  "files": 10,
+  "bytes": 176230,
+  "excluded_counts": {
+    "included": 10
+  },
+  "redacted_files": 0
+}

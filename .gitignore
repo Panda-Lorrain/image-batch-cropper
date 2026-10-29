@@ -1,0 +1,20 @@
+node_modules/
+*.log
+.DS_Store
+
+# Cloud snapshot credential and cache exclusions
+.env
+.env.local
+.env.production
+node_modules/
+oh_modules/
+.venv*/
+__pycache__/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+local.properties
+project.private.config.json
