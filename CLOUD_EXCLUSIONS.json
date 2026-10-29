@@ -1,0 +1,10 @@
+{
+  "excluded": [
+    {
+      "path": ".git/**",
+      "reason": "excluded-directory",
+      "bytes": null
+    }
+  ],
+  "redacted": []
+}

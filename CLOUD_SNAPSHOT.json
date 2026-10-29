@@ -1,0 +1,11 @@
+{
+  "title": "本地图片批量裁切",
+  "source": "E:\\ImageCropper",
+  "source_branch": "main",
+  "files": 9,
+  "bytes": 193265,
+  "excluded_counts": {
+    "included": 9
+  },
+  "redacted_files": 0
+}

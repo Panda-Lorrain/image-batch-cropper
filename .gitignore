@@ -1,0 +1,34 @@
+# 操作系统
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志 & 临时文件
+*.log
+*.tmp
+~$*
+
+# Cloud snapshot credential and cache exclusions
+.env
+.env.local
+.env.production
+node_modules/
+oh_modules/
+.venv*/
+__pycache__/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+local.properties
+project.private.config.json
