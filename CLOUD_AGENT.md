@@ -7,7 +7,7 @@
 ## 拉取
 
 ```sh
-git clone --branch main https://github.com/Panda-Lorrain/python-exercises.git
+git clone --depth 1 --single-branch --branch project/python-exercises https://github.com/Panda-Lorrain/image-batch-cropper.git python-exercises
 ```
 
 ## 开始工作
@@ -26,4 +26,4 @@ git clone --branch main https://github.com/Panda-Lorrain/python-exercises.git
 
 ## PR 的目标分支
 
-本次快照使用独立的 Git 历史。请从本次分支创建任务分支，并将 PR 的目标分支设为 `main`。已有仓库的原默认分支和历史均保留；不要直接向原默认分支发起跨历史的 PR。
+本次快照使用独立的 Git 历史。请从本次分支创建任务分支，并将 PR 的目标分支设为 `project/python-exercises`。已有仓库的原默认分支和历史均保留；不要直接向原默认分支发起跨历史的 PR。
